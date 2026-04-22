@@ -8,6 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import pages.AddToCartPage;
 import pages.HomePage;
 
 
@@ -17,6 +18,7 @@ public class DriverManager {
     protected ConfigReader config = new ConfigReader();
     
     protected HomePage homepage;
+    protected AddToCartPage addcart;
     
     @BeforeClass
     public void setup() {
@@ -30,6 +32,7 @@ public class DriverManager {
     @BeforeMethod
     public void instantiatePages() {
     	homepage = new HomePage(driver,wait);
+    	addcart = new AddToCartPage(driver,wait);
     }
 
     @AfterSuite
