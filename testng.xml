@@ -4,6 +4,7 @@
 			<class name="test.RegisterTest"></class>
 			<class name="test.InvalidLoginTest"></class>
 			<class name="test.LoginTest"></class>
+			<class name="test.SearchTest"></class>
 			<class name="test.AddToCartTest"></class>
 		</classes>
 	</test>

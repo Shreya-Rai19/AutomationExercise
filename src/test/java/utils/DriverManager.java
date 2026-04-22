@@ -13,6 +13,7 @@ import pages.HomePage;
 import pages.InvalidLoginPage;
 import pages.LoginPage;
 import pages.SignUpLoginPage;
+import pages.SearchPage;
 
 public class DriverManager {
     protected WebDriver driver;
@@ -24,6 +25,7 @@ public class DriverManager {
     protected AddToCartPage addcart;
     protected SignUpLoginPage signuploginpage;
     protected InvalidLoginPage invalidPage;
+    protected SearchPage searchPage;
     protected CartPage cart;
 
     @BeforeClass
@@ -31,7 +33,7 @@ public class DriverManager {
         driver = DriverFactory.getDriver(config.getBrowser()); // launches Chrome
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.get(config.getBaseUrl());
+        driver.get(config.getBaseUrl()); // https://automationexercise.com/
     }
 
     @BeforeMethod
@@ -41,7 +43,8 @@ public class DriverManager {
         addcart = new AddToCartPage(driver, wait);
         signuploginpage = new SignUpLoginPage(driver, wait);
         invalidPage = new InvalidLoginPage(driver, wait);
-        cart=new CartPage(driver,wait);
+        searchPage = new SearchPage(driver, wait);
+        cart = new CartPage(driver, wait);
     }
 
     @AfterSuite
