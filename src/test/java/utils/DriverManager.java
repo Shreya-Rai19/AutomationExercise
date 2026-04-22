@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import pages.AddToCartPage;
+import pages.CartPage;
 import pages.HomePage;
 import pages.InvalidLoginPage;
 import pages.LoginPage;
@@ -23,13 +24,14 @@ public class DriverManager {
     protected AddToCartPage addcart;
     protected SignUpLoginPage signuploginpage;
     protected InvalidLoginPage invalidPage;
+    protected CartPage cart;
 
     @BeforeClass
     public void setup() {
         driver = DriverFactory.getDriver(config.getBrowser()); // launches Chrome
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.get(config.getBaseUrl()); // https://automationexercise.com/
+        driver.get(config.getBaseUrl());
     }
 
     @BeforeMethod
@@ -39,6 +41,7 @@ public class DriverManager {
         addcart = new AddToCartPage(driver, wait);
         signuploginpage = new SignUpLoginPage(driver, wait);
         invalidPage = new InvalidLoginPage(driver, wait);
+        cart=new CartPage(driver,wait);
     }
 
     @AfterSuite
