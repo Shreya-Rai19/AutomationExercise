@@ -10,15 +10,18 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.AddToCartPage;
 import pages.HomePage;
+import pages.SignUpLoginPage;
+import pages.InvalidLoginPage;
 
 
 public class DriverManager {
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected ConfigReader config = new ConfigReader();
-    
     protected HomePage homepage;
     protected AddToCartPage addcart;
+    protected SignUpLoginPage signuploginpage;
+    protected InvalidLoginPage invalidPage;
     
     @BeforeClass
     public void setup() {
@@ -33,6 +36,8 @@ public class DriverManager {
     public void instantiatePages() {
     	homepage = new HomePage(driver,wait);
     	addcart = new AddToCartPage(driver,wait);
+    	signuploginpage = new SignUpLoginPage(driver,wait);
+    	invalidPage = new InvalidLoginPage(driver, wait);
     }
 
     @AfterSuite
