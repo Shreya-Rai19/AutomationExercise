@@ -11,6 +11,19 @@ public class AddToCartTest extends DriverManager{
 		addcart.categoryWomen();
 		addcart.categoryChild();
 		addcart.categoryPolo();
+		
+		cart.goToCart();
+	       
+	     int count = cart.getItemCount();
+	     System.out.println("Item Count: "+count);
+
+	     cart.removeTwoItems();
+
+
+	     int after = cart.getItemCount();
+	     System.out.println("After Remove: " + after);
+	     
+	     homepage.clickLogout();
 	}
 
 }
