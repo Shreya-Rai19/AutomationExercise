@@ -34,6 +34,11 @@
     <version>7.34.3</version>
     <scope>compile</scope>
 </dependency>
-</dependencies>
+  	<dependency>
+  		<groupId>demo</groupId>
+  		<artifactId>nopCommerce</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
   
 </project>
