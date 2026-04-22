@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2026-04-22T15:19:56 IST" name="Default suite" finished-at="2026-04-22T15:20:17 IST" duration-ms="21053">
     <groups>
     </groups>
@@ -24,6 +25,30 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.SearchTest -->
+=======
+  <suite started-at="2026-04-22T14:46:48 IST" name="Default suite" finished-at="2026-04-22T14:47:35 IST" duration-ms="46874">
+    <groups>
+    </groups>
+    <test started-at="2026-04-22T14:46:48 IST" name="Default test" finished-at="2026-04-22T14:47:35 IST" duration-ms="46874">
+      <class name="test.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.RegisterTest@451001e5]" started-at="2026-04-22T14:46:48 IST" name="setup" finished-at="2026-04-22T14:47:06 IST" duration-ms="18160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.RegisterTest@451001e5]" started-at="2026-04-22T14:47:06 IST" name="instantiatePages" finished-at="2026-04-22T14:47:06 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiatePages -->
+        <test-method signature="registerTest()[pri:0, instance:test.RegisterTest@451001e5]" started-at="2026-04-22T14:47:06 IST" name="registerTest" finished-at="2026-04-22T14:47:35 IST" duration-ms="28471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.RegisterTest@451001e5]" started-at="2026-04-22T14:47:35 IST" name="tearDown" finished-at="2026-04-22T14:47:36 IST" duration-ms="1350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.RegisterTest -->
+>>>>>>> 5f12c92959e0d7851e287ac0615491e606cc8240
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

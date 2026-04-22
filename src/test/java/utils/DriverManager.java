@@ -8,11 +8,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import pages.AddToCartPage;
+import pages.CartPage;
 import pages.HomePage;
 import pages.InvalidLoginPage;
 import pages.LoginPage;
 import pages.SignUpLoginPage;
-import pages.SearchPage;  
+import pages.SearchPage;
 
 public class DriverManager {
     protected WebDriver driver;
@@ -24,7 +25,8 @@ public class DriverManager {
     protected AddToCartPage addcart;
     protected SignUpLoginPage signuploginpage;
     protected InvalidLoginPage invalidPage;
-    protected SearchPage searchPage;   
+    protected SearchPage searchPage;
+    protected CartPage cart;
 
     @BeforeClass
     public void setup() {
@@ -41,7 +43,8 @@ public class DriverManager {
         addcart = new AddToCartPage(driver, wait);
         signuploginpage = new SignUpLoginPage(driver, wait);
         invalidPage = new InvalidLoginPage(driver, wait);
-        searchPage = new SearchPage(driver, wait); 
+        searchPage = new SearchPage(driver, wait);
+        cart = new CartPage(driver, wait);
     }
 
     @AfterSuite
