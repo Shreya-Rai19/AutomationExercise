@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.HomePage;
 import pages.SignUpLoginPage;
+import pages.InvalidLoginPage;
 
 
 public class DriverManager {
@@ -19,6 +20,7 @@ public class DriverManager {
     
     protected HomePage homepage;
     protected SignUpLoginPage signuploginpage;
+    protected InvalidLoginPage invalidPage;
     
     @BeforeClass
     public void setup() {
@@ -33,6 +35,7 @@ public class DriverManager {
     public void instantiatePages() {
     	homepage = new HomePage(driver,wait);
     	signuploginpage = new SignUpLoginPage(driver,wait);
+    	invalidPage = new InvalidLoginPage(driver, wait);
     }
 
     @AfterSuite
