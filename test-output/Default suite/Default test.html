@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 22 11:06:25 IST 2026</td>
+<td>Started on:</td><td>Wed Apr 22 12:00:44 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14316 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20406 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.RegisterTest.registerTest()'><b>registerTest</b><br>Test class: test.RegisterTest</td>
+<td title='test.InvalidLoginTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: test.InvalidLoginTest<br>Parameters: , somepassword</td>
 <td></td>
 <td>1</td>
-<td>test.RegisterTest@3e08ff24</td></tr>
+<td>test.InvalidLoginTest@305ffe9e</td></tr>
+<tr>
+<td title='test.InvalidLoginTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: test.InvalidLoginTest<br>Parameters: user@example.com, </td>
+<td></td>
+<td>2</td>
+<td>test.InvalidLoginTest@305ffe9e</td></tr>
+<tr>
+<td title='test.InvalidLoginTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: test.InvalidLoginTest<br>Parameters: , </td>
+<td></td>
+<td>1</td>
+<td>test.InvalidLoginTest@305ffe9e</td></tr>
+<tr>
+<td title='test.InvalidLoginTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: test.InvalidLoginTest<br>Parameters: wronguser@example.com, ValidPassword123</td>
+<td></td>
+<td>2</td>
+<td>test.InvalidLoginTest@305ffe9e</td></tr>
+<tr>
+<td title='test.InvalidLoginTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: test.InvalidLoginTest<br>Parameters: wronguser@example.com, wrongpassword</td>
+<td></td>
+<td>2</td>
+<td>test.InvalidLoginTest@305ffe9e</td></tr>
+<tr>
+<td title='test.InvalidLoginTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: test.InvalidLoginTest<br>Parameters: validuser@example.com, wrongpassword</td>
+<td></td>
+<td>2</td>
+<td>test.InvalidLoginTest@305ffe9e</td></tr>
 </table><p>
 </body>
 </html>
