@@ -22,6 +22,8 @@ public class AddToCartTest extends DriverManager{
 
 	     int after = cart.getItemCount();
 	     System.out.println("After Remove: " + after);
+	     
+	     homepage.clickLogout();
 	}
 
 }

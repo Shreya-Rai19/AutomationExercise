@@ -22,7 +22,6 @@ public class InvalidLoginTest extends DriverManager {
 
     @Test(dataProvider = "invalidCredentials")
     public void testInvalidLogin(String email, String password) {
-
         invalidPage.goToLoginPage();
         invalidPage.login(email, password);
 

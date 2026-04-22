@@ -28,6 +28,7 @@ public class RegisterTest extends DriverManager {
 		signuploginpage.clickCreateAccountButton();
 		Assert.assertTrue(signuploginpage.getAccountCreatedMessage().toLowerCase().contains("account created"));
 		signuploginpage.clickContinue();
+		homepage.clickLogout();
 	}
 
 }

@@ -16,8 +16,13 @@ public class HomePage {
 	}
 	
 	By loginOrSignup = By.xpath("//a[@href='/login']");
+	By logout = By.xpath("//a[@href='/logout']");
 	
 	public void clickLoginOrSignup() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(loginOrSignup)).click();
+	}
+	
+	public void clickLogout() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(logout)).click();
 	}
 }

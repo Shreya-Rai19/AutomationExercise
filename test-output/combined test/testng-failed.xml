@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [combined test]">
+  <test thread-count="5" name="pom+testng(failed)">
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="validLoginTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="instantiatePages"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+      <class name="test.InvalidLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testInvalidLogin" invocation-numbers="1 2 3 4 5"/>
+          <include name="instantiatePages"/>
+        </methods>
+      </class> <!-- test.InvalidLoginTest -->
+      <class name="test.AddToCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="addTest"/>
+          <include name="instantiatePages"/>
+        </methods>
+      </class> <!-- test.AddToCartTest -->
+    </classes>
+  </test> <!-- pom+testng(failed) -->
+</suite> <!-- Failed suite [combined test] -->
