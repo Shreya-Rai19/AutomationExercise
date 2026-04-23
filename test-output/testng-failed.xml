@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [combined test]">
-  <test thread-count="5" name="pom+testng(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.SearchTest">
+      <class name="runners.RegisterCheckoutRunner">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="searchTwoProductsTest"/>
-          <include name="instantiatePages"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.SearchTest -->
-      <class name="test.RegisterTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="registerTest"/>
-          <include name="instantiatePages"/>
-        </methods>
-      </class> <!-- test.RegisterTest -->
-      <class name="test.AddToCartTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="addTest"/>
-          <include name="instantiatePages"/>
-        </methods>
-      </class> <!-- test.AddToCartTest -->
+      </class> <!-- runners.RegisterCheckoutRunner -->
     </classes>
-  </test> <!-- pom+testng(failed) -->
-</suite> <!-- Failed suite [combined test] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -3,33 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="test.InvalidLoginTest">
-=======
-<<<<<<< HEAD
-      <class name="test.SearchTest">
+      <class name="runners.RegisterCheckoutRunner">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="searchTwoProductsTest"/>
-          <include name="instantiatePages"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.SearchTest -->
-=======
-      <class name="test.AddToCartTest">
->>>>>>> 76f61d71bcce1cb4112cedd8baac553937d89d3f
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testInvalidLogin" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="instantiatePages"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- test.InvalidLoginTest -->
-=======
-      </class> <!-- test.AddToCartTest -->
->>>>>>> 5f12c92959e0d7851e287ac0615491e606cc8240
->>>>>>> 76f61d71bcce1cb4112cedd8baac553937d89d3f
+      </class> <!-- runners.RegisterCheckoutRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
