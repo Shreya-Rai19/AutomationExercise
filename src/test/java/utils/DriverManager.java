@@ -10,10 +10,12 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.AddToCartPage;
 import pages.CartPage;
+import pages.CheckOutPage;
 import pages.HomePage;
 import pages.InvalidLoginPage;
 import pages.LoginPage;
 import pages.RegisterWhileCheckoutPage;
+import pages.PaymentPage;
 import pages.SearchPage;
 import pages.SignUpLoginPage;
 
@@ -29,7 +31,9 @@ public class DriverManager {
     protected InvalidLoginPage invalidPage;
     protected SearchPage searchPage;
     protected CartPage cart;
-    protected RegisterWhileCheckoutPage checkout;
+    protected RegisterWhileCheckoutPage check;
+    protected CheckOutPage checkout;
+    protected PaymentPage payment;
 
     @BeforeClass
     public void setup() {
@@ -48,7 +52,8 @@ public class DriverManager {
         invalidPage = new InvalidLoginPage(driver, wait);
         searchPage = new SearchPage(driver, wait);
         cart = new CartPage(driver, wait);
-        checkout=new RegisterWhileCheckoutPage(driver, wait);
+        check=new RegisterWhileCheckoutPage(driver, wait);
+        checkout = new CheckOutPage(driver,wait);
     }
 
     @AfterSuite
