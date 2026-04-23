@@ -1,12 +1,24 @@
 package utils;
+
  
-import io.cucumber.java.Before;
-import io.cucumber.java.After;
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
- 
-import pages.*;
+
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.Before;
+import pages.AddToCartPage;
+import pages.CartPage;
+import pages.CheckOutPage;
+import pages.HomePage;
+import pages.InvalidLoginPage;
+import pages.LoginPage;
+import pages.MenTshirtPage;
+import pages.PaymentPage;
+import pages.SearchPage;
+import pages.SignUpLoginPage;
+import pages.SuccessPage;
  
 public class Hooks extends DriverManager{
     public static WebDriver driver;
@@ -23,7 +35,9 @@ public class Hooks extends DriverManager{
     public static CheckOutPage checkout;
     public static PaymentPage payment;
     public static SuccessPage success;
- 
+    public static MenTshirtPage mentshirtpage;
+
+
     @Before
     public void beforeScenario() {
         driver = DriverFactory.getDriver(config.getBrowser());
@@ -31,8 +45,10 @@ public class Hooks extends DriverManager{
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get(config.getBaseUrl());
+        driver.get(config.getBaseUrl());
         
- 
+
+
         // instantiate pages
         loginpage = new LoginPage(driver, wait);
         homepage = new HomePage(driver, wait);
@@ -44,12 +60,18 @@ public class Hooks extends DriverManager{
         checkout=new CheckOutPage(driver,wait);
         payment=new PaymentPage(driver,wait);
         success=new SuccessPage(driver,wait);
+        mentshirtpage=new MenTshirtPage(driver,wait);
     }
  
-    @After
-    public void afterScenario() {
+
+    @AfterAll
+    public static void afterAll() {
         if (driver != null) {
             driver.quit();
         }
     }
+
 }
+
+
+
