@@ -1,11 +1,19 @@
 <suite name="combined test">
-	<test name="pom+testng">
-		<classes>
-			<class name="test.RegisterTest"></class>
+    <test name="pom+testng">
+        <classes>
+            <!-- POM + TestNG-->
+            <class name="test.RegisterTest"></class>
 			<class name="test.InvalidLoginTest"></class>
 			<class name="test.LoginTest"></class>
 			<class name="test.SearchTest"></class>
 			<class name="test.AddToCartTest"></class>
-		</classes>
-	</test>
+
+            <!-- POM + BDD -->
+            <class name="runners.AddReviewRunner"/>
+            <class name="runners.RegisterWhileCheckoutRunner"/>
+            <class name="runners.RegisterCheckoutRunner"/>
+            <class name="runners.CartSubscriptionRunner"/>
+            <!--class name="runners.ContactUsRunner"-->
+        </classes>
+    </test>
 </suite>

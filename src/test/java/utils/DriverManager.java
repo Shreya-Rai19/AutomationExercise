@@ -1,6 +1,7 @@
 package utils;
 
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
@@ -9,11 +10,18 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.AddToCartPage;
 import pages.CartPage;
+import pages.CartSubscriptionPage;
 import pages.HomePage;
 import pages.InvalidLoginPage;
 import pages.LoginPage;
-import pages.SignUpLoginPage;
+import pages.CheckOutPage;
+import pages.HomePage;
+import pages.InvalidLoginPage;
+import pages.LoginPage;
+import pages.RegisterWhileCheckoutPage;
+import pages.PaymentPage;
 import pages.SearchPage;
+import pages.SignUpLoginPage;
 
 public class DriverManager {
     protected WebDriver driver;
@@ -27,6 +35,10 @@ public class DriverManager {
     protected InvalidLoginPage invalidPage;
     protected SearchPage searchPage;
     protected CartPage cart;
+    protected CartSubscriptionPage cartSubscription;
+    protected RegisterWhileCheckoutPage check;
+    protected CheckOutPage checkout;
+    protected PaymentPage payment;
 
     @BeforeClass
     public void setup() {
@@ -45,6 +57,9 @@ public class DriverManager {
         invalidPage = new InvalidLoginPage(driver, wait);
         searchPage = new SearchPage(driver, wait);
         cart = new CartPage(driver, wait);
+        cartSubscription = new CartSubscriptionPage(driver,wait);
+        check=new RegisterWhileCheckoutPage(driver, wait);
+        checkout = new CheckOutPage(driver,wait);
     }
 
     @AfterSuite

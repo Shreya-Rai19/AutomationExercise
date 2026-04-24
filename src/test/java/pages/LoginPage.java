@@ -11,8 +11,6 @@ public class LoginPage {
 
     WebDriver driver;
     WebDriverWait wait;
-
-  
     private static final String EMAIL = CredentialUtil.email;
     private static final String PASSWORD = CredentialUtil.password;
 

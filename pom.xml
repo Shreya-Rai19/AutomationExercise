@@ -39,6 +39,11 @@
   		<artifactId>nopCommerce</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+  		<groupId>Cucumber.javaProject</groupId>
+  		<artifactId>Cucumber.javaProject</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   
 </project>

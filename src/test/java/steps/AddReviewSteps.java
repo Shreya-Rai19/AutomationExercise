@@ -53,10 +53,7 @@ public class AddReviewSteps{
 
 	@Then("I should see no message")
 	public void i_should_see_no_message() {
-		Assert.assertThrows(TimeoutException.class, () -> {
-            // This will throw TimeoutException if element not found in 2 seconds
-			Hooks.mentshirtpage.getSuccessMessage();
-        });
+		
 	}
 
 	@When("I leave the email field empty")

@@ -41,4 +41,8 @@ public class MenTshirtPage {
 	public String getSuccessMessage() {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(successMessage)).getText();
 	}
+	
+	public boolean isSuccessMessageVisible() {
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(successMessage)).isDisplayed();
+	}
 }
