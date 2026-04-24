@@ -14,6 +14,12 @@ import pages.CartSubscriptionPage;
 import pages.HomePage;
 import pages.InvalidLoginPage;
 import pages.LoginPage;
+import pages.CheckOutPage;
+import pages.HomePage;
+import pages.InvalidLoginPage;
+import pages.LoginPage;
+import pages.RegisterWhileCheckoutPage;
+import pages.PaymentPage;
 import pages.SearchPage;
 import pages.SignUpLoginPage;
 
@@ -30,6 +36,9 @@ public class DriverManager {
     protected SearchPage searchPage;
     protected CartPage cart;
     protected CartSubscriptionPage cartSubscription;
+    protected RegisterWhileCheckoutPage check;
+    protected CheckOutPage checkout;
+    protected PaymentPage payment;
 
     @BeforeClass
     public void setup() {
@@ -49,6 +58,8 @@ public class DriverManager {
         searchPage = new SearchPage(driver, wait);
         cart = new CartPage(driver, wait);
         cartSubscription = new CartSubscriptionPage(driver,wait);
+        check=new RegisterWhileCheckoutPage(driver, wait);
+        checkout = new CheckOutPage(driver,wait);
     }
 
     @AfterSuite

@@ -11,8 +11,8 @@ public class LoginPage {
     WebDriverWait wait;
 
   
-    private static final String EMAIL = "useradmin@gmail.com";
-    private static final String PASSWORD = "user123";
+    private static final String EMAIL = "swa123@gmail.com";
+    private static final String PASSWORD = "1234567";
 
   
     public LoginPage(WebDriver driver, WebDriverWait wait) {

@@ -3,22 +3,22 @@
 <suite name="Failed suite [combined test]">
   <test thread-count="5" name="pom+testng(failed)">
     <classes>
-      <class name="test.LoginTest">
-        <methods>
-          <include name="validLoginTest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="instantiatePages"/>
-        </methods>
-      </class> <!-- test.LoginTest -->
-      <class name="test.InvalidLoginTest">
+      <class name="test.SearchTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testInvalidLogin" invocation-numbers="1 2 3 4 5"/>
+          <include name="searchTwoProductsTest"/>
           <include name="instantiatePages"/>
         </methods>
-      </class> <!-- test.InvalidLoginTest -->
+      </class> <!-- test.SearchTest -->
+      <class name="test.RegisterTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="registerTest"/>
+          <include name="instantiatePages"/>
+        </methods>
+      </class> <!-- test.RegisterTest -->
       <class name="test.AddToCartTest">
         <methods>
           <include name="setup"/>
