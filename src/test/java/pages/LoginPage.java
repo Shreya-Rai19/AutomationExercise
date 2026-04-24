@@ -5,14 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.CredentialUtil;
+
 public class LoginPage {
 
     WebDriver driver;
     WebDriverWait wait;
 
   
-    private static final String EMAIL = "useradmin@gmail.com";
-    private static final String PASSWORD = "user123";
+    private static final String EMAIL = CredentialUtil.email;
+    private static final String PASSWORD = CredentialUtil.password;
 
   
     public LoginPage(WebDriver driver, WebDriverWait wait) {

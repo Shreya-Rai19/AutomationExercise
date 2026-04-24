@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [combined test]">
+  <test thread-count="5" name="pom+testng(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="test.InvalidLoginTest">
-=======
-<<<<<<< HEAD
+      <class name="test.LoginTest">
+        <methods>
+          <include name="validLoginTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="instantiatePages"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+      <class name="test.AddToCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="addTest"/>
+          <include name="instantiatePages"/>
+        </methods>
+      </class> <!-- test.AddToCartTest -->
       <class name="test.SearchTest">
         <methods>
           <include name="setup"/>
@@ -15,21 +27,6 @@
           <include name="instantiatePages"/>
         </methods>
       </class> <!-- test.SearchTest -->
-=======
-      <class name="test.AddToCartTest">
->>>>>>> 76f61d71bcce1cb4112cedd8baac553937d89d3f
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testInvalidLogin" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="instantiatePages"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- test.InvalidLoginTest -->
-=======
-      </class> <!-- test.AddToCartTest -->
->>>>>>> 5f12c92959e0d7851e287ac0615491e606cc8240
->>>>>>> 76f61d71bcce1cb4112cedd8baac553937d89d3f
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- pom+testng(failed) -->
+</suite> <!-- Failed suite [combined test] -->

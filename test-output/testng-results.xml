@@ -1,197 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-22T15:40:13 IST" name="combined test" finished-at="2026-04-22T15:41:24 IST" duration-ms="70660">
+  <suite started-at="2026-04-24T10:37:31 IST" name="Default suite" finished-at="2026-04-24T10:38:44 IST" duration-ms="72525">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AddReviewRunner@4a8355dd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-22T15:40:13 IST" name="pom+testng" finished-at="2026-04-22T15:41:24 IST" duration-ms="70660">
-      <class name="test.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.RegisterTest@76494737]" started-at="2026-04-22T15:40:13 IST" name="setup" finished-at="2026-04-22T15:40:23 IST" duration-ms="10148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.RegisterTest@76494737]" started-at="2026-04-22T15:40:23 IST" name="instantiatePages" finished-at="2026-04-22T15:40:23 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method signature="registerTest()[pri:0, instance:test.RegisterTest@76494737]" started-at="2026-04-22T15:40:23 IST" name="registerTest" finished-at="2026-04-22T15:40:34 IST" duration-ms="10512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.RegisterTest@76494737]" started-at="2026-04-22T15:41:24 IST" name="tearDown" finished-at="2026-04-22T15:41:24 IST" duration-ms="519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.RegisterTest -->
-      <class name="test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginTest@43df23d3]" started-at="2026-04-22T15:40:47 IST" name="setup" finished-at="2026-04-22T15:40:50 IST" duration-ms="2955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.LoginTest@43df23d3]" started-at="2026-04-22T15:40:50 IST" name="instantiatePages" finished-at="2026-04-22T15:40:50 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method signature="validLoginTest()[pri:0, instance:test.LoginTest@43df23d3]" started-at="2026-04-22T15:40:50 IST" name="validLoginTest" finished-at="2026-04-22T15:40:54 IST" duration-ms="4521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-      </class> <!-- test.LoginTest -->
-      <class name="test.InvalidLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:34 IST" name="setup" finished-at="2026-04-22T15:40:36 IST" duration-ms="2358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:36 IST" name="instantiatePages" finished-at="2026-04-22T15:40:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:36 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-22T15:40:38 IST" duration-ms="1998" status="PASS">
+    <test started-at="2026-04-24T10:37:31 IST" name="Default test" finished-at="2026-04-24T10:38:44 IST" duration-ms="72525">
+      <class name="runners.AddReviewRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.AddReviewRunner@4a8355dd]" started-at="2026-04-24T10:37:31 IST" name="setUpClass" finished-at="2026-04-24T10:37:32 IST" duration-ms="688" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[wronguser@example.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrongpassword]]>
+                <![CDATA[org.testng.TestRunner@1984212d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:38 IST" name="instantiatePages" finished-at="2026-04-22T15:40:38 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:38 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-22T15:40:40 IST" duration-ms="2222" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AddReviewRunner@4a8355dd]" started-at="2026-04-24T10:37:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T10:37:59 IST" duration-ms="26920" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[validuser@example.com]]>
+                <![CDATA["Submit a valid review"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[wrongpassword]]>
+                <![CDATA["Add Review for Product"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:40 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-22T15:40:43 IST" duration-ms="2274" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AddReviewRunner@4a8355dd]" started-at="2026-04-24T10:37:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T10:38:24 IST" duration-ms="25420" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[wronguser@example.com]]>
+                <![CDATA["Submit a review with missing name"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[ValidPassword123]]>
+                <![CDATA["Add Review for Product"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:40 IST" name="instantiatePages" finished-at="2026-04-22T15:40:40 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:43 IST" name="instantiatePages" finished-at="2026-04-22T15:40:43 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:43 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-22T15:40:44 IST" duration-ms="1471" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AddReviewRunner@4a8355dd]" started-at="2026-04-24T10:38:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-24T10:38:42 IST" duration-ms="18166" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[]]>
+                <![CDATA["Submit a review with missing email"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[somepassword]]>
+                <![CDATA["Add Review for Product"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:44 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-22T15:40:46 IST" duration-ms="1335" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user@example.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.AddReviewRunner@4a8355dd]" started-at="2026-04-24T10:38:42 IST" name="tearDownClass" finished-at="2026-04-24T10:38:44 IST" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:44 IST" name="instantiatePages" finished-at="2026-04-22T15:40:44 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:46 IST" name="instantiatePages" finished-at="2026-04-22T15:40:46 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:0, instance:test.InvalidLoginTest@359df09a]" started-at="2026-04-22T15:40:46 IST" name="testInvalidLogin" data-provider="invalidCredentials" finished-at="2026-04-22T15:40:47 IST" duration-ms="1258" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-      </class> <!-- test.InvalidLoginTest -->
-      <class name="test.AddToCartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.AddToCartTest@792b749c]" started-at="2026-04-22T15:41:06 IST" name="setup" finished-at="2026-04-22T15:41:09 IST" duration-ms="3001" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addTest()[pri:0, instance:test.AddToCartTest@792b749c]" started-at="2026-04-22T15:41:09 IST" name="addTest" finished-at="2026-04-22T15:41:24 IST" duration-ms="14518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTest -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.AddToCartTest@792b749c]" started-at="2026-04-22T15:41:09 IST" name="instantiatePages" finished-at="2026-04-22T15:41:09 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-      </class> <!-- test.AddToCartTest -->
-      <class name="test.SearchTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.SearchTest@6d60fe40]" started-at="2026-04-22T15:40:54 IST" name="setup" finished-at="2026-04-22T15:40:57 IST" duration-ms="2701" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="instantiatePages()[pri:0, instance:test.SearchTest@6d60fe40]" started-at="2026-04-22T15:40:57 IST" name="instantiatePages" finished-at="2026-04-22T15:40:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- instantiatePages -->
-        <test-method signature="searchTwoProductsTest()[pri:0, instance:test.SearchTest@6d60fe40]" started-at="2026-04-22T15:40:57 IST" name="searchTwoProductsTest" finished-at="2026-04-22T15:41:06 IST" duration-ms="9293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTwoProductsTest -->
-      </class> <!-- test.SearchTest -->
-    </test> <!-- pom+testng -->
-  </suite> <!-- combined test -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.AddReviewRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

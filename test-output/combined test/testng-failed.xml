@@ -11,14 +11,6 @@
           <include name="instantiatePages"/>
         </methods>
       </class> <!-- test.LoginTest -->
-      <class name="test.InvalidLoginTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testInvalidLogin" invocation-numbers="1 2 3 4 5"/>
-          <include name="instantiatePages"/>
-        </methods>
-      </class> <!-- test.InvalidLoginTest -->
       <class name="test.AddToCartTest">
         <methods>
           <include name="setup"/>
@@ -27,6 +19,14 @@
           <include name="instantiatePages"/>
         </methods>
       </class> <!-- test.AddToCartTest -->
+      <class name="test.SearchTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="searchTwoProductsTest"/>
+          <include name="instantiatePages"/>
+        </methods>
+      </class> <!-- test.SearchTest -->
     </classes>
   </test> <!-- pom+testng(failed) -->
 </suite> <!-- Failed suite [combined test] -->
